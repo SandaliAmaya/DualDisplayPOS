@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">客显功能演示demo</string>
+    <string name="send_videos">发送多个视频文件</string>
+    <string name="getphoto">获取相册图片</string>
+    <string name="menu_ppt">左清单右幻灯片</string>
+    <string name="to_mydsd">打开mydsd</string>
+    <string name="to_sunmi_dsc14">打开sunmi.dsc14</string>
+    <string name="WX_pay">微信支付</string>
+    <string name="menu">展示清单</string>
+    <string name="welcome_img">显示单张图片</string>
+    <string name="welcome">显示欢迎文字</string>
+    <string name="menu_videos">发送多视频加清单文件</string>
+    <string name="GetViceFileCacheSize">获取副屏缓存文件大小</string>
+    <string name="clear_vice_cachefile">清除缓存</string>
+    <string name="paly_video">播放单个视频</string>
+    <string name="acquire_sub_resolution_ratio">获取副屏分辨率</string>
+    <string name="get_sub_model">获取副屏model</string>
+    <string name="play_video_menu">播放单个视频加清单文件</string>
+    <string name="show_imgs">展示轮播图</string>
+    <string name="clear_fileid">清除副屏指定的文件id缓存</string>
+    <string name="read_sub_model">读取副屏model</string>
+    <string name="open_vice_setting">打开副屏设置应用</string>
+</resources>

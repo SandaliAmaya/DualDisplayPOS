@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:numpad="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btn_wxpay"
+        android:layout_marginEnd="0dp"
+        android:background="@color/zxing_transparent"
+        android:text="Welcome" />
+
+    <Button
+        android:id="@+id/btn_wxpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="208dp"
+        android:text="Generate QR to Pay"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:text="Enter the Amount"
+        android:textAlignment="center"
+        android:textSize="22dp" />
+
+    <cat.xojan.numpad.NumPadView
+        android:id="@+id/custom_number_pad"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/btn_wxpay"
+        android:layout_marginTop="58dp"
+        android:background="@color/grey"
+        numpad:button0_background="@drawable/button_background"
+        numpad:button1_background="@drawable/button_background"
+        numpad:button2_background="@drawable/button_background"
+        numpad:button3_background="@drawable/button_background"
+        numpad:button4_background="@drawable/button_background"
+        numpad:button5_background="@drawable/button_background"
+        numpad:button6_background="@drawable/button_background"
+        numpad:button7_background="@drawable/button_background"
+        numpad:button8_background="@drawable/button_background"
+        numpad:button9_background="@drawable/button_background"
+        numpad:custom_button1_background="@drawable/button_del_background"
+        numpad:custom_button1_text="DEL"
+        numpad:custom_button2_background="@drawable/button_ok_background"
+        numpad:custom_button2_text=""
+        numpad:fontFamily="sans-serif-light"
+        numpad:horizontalSeparatorMargin="6dp"
+        numpad:textBold="false"
+        numpad:textColor="@color/dark_grey"
+        numpad:textSize="14sp"
+        numpad:verticalSeparatorMargin="12dp"
+        />
+
+
+</RelativeLayout>

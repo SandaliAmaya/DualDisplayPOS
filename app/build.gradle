@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.paymedia.directpay_cargills"
+        minSdkVersion 23
+        targetSdkVersion 22
+        versionCode 9
+        versionName "1.0.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            zipAlignEnabled true
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.sunmi:DS_Lib:1.0.11'
+    compile 'com.alibaba:fastjson:1.1.67.android'
+    compile 'com.sunmi:DS_Lib:1.0.9'
+    //Commercial library provides lib, contains the interface has been packaged
+    compile 'com.google.code.gson:gson:2.8.1' //gson any version
+    compile 'cat.xojan:numpad:1.1.0'
+    compile 'com.journeyapps:zxing-android-embedded:3.6.0'
+    implementation 'com.google.firebase:firebase-messaging:15.0.2'
+
+    //compile 'com.journeyapps:zxing-android-embedded:3.6.0'
+}
+
+repositories {
+    maven {
+        url 'https://dl.bintray.com/xojan/maven/'
+    }
+}
+
+
+apply plugin: 'com.google.gms.google-services'
